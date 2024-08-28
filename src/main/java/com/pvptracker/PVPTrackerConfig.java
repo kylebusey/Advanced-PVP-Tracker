@@ -4,16 +4,16 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
+@ConfigGroup("pvptracker")
 public interface PVPTrackerConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "Enabled Checkbox",
+		name = "Enabled",
+		description = "Enables/disables the plugin"
 	)
-	default String greeting()
+	default boolean isEnabled()
 	{
-		return "Hello";
+		return true;
 	}
 }
