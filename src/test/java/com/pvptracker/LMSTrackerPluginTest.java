@@ -3,11 +3,11 @@ package com.pvptracker;
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class PVPTrackerPluginTest
+public class LMSTrackerPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(PVPTrackerPlugin.class);
+		ExternalPluginManager.loadBuiltin(LMSPlugin.class);
 		RuneLite.main(args);
 	}
 }
